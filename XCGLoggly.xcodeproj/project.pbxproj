@@ -11,6 +11,7 @@
 		F4D6B0E61DF1830F00DB56E8 /* XCGLoggly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6B0DC1DF1830F00DB56E8 /* XCGLoggly.framework */; };
 		F4D6B0EB1DF1830F00DB56E8 /* XCGLogglyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6B0EA1DF1830F00DB56E8 /* XCGLogglyTests.swift */; };
 		F4D6B0ED1DF1830F00DB56E8 /* XCGLoggly.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D6B0DF1DF1830F00DB56E8 /* XCGLoggly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D6B0F71DF184B700DB56E8 /* XCGLogglyDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6B0F61DF184B700DB56E8 /* XCGLogglyDestination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		F4D6B0E51DF1830F00DB56E8 /* XCGLogglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCGLogglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6B0EA1DF1830F00DB56E8 /* XCGLogglyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLogglyTests.swift; sourceTree = "<group>"; };
 		F4D6B0EC1DF1830F00DB56E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D6B0F61DF184B700DB56E8 /* XCGLogglyDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGLogglyDestination.swift; sourceTree = "<group>"; };
 		FE027A6914839D109CB27BE5 /* Pods-XCGLoggly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCGLoggly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCGLoggly/Pods-XCGLoggly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			children = (
 				F4D6B0DF1DF1830F00DB56E8 /* XCGLoggly.h */,
 				F4D6B0E01DF1830F00DB56E8 /* Info.plist */,
+				F4D6B0F61DF184B700DB56E8 /* XCGLogglyDestination.swift */,
 			);
 			path = XCGLoggly;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 					F4D6B0DB1DF1830F00DB56E8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SMQREV95K4;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					F4D6B0E41DF1830F00DB56E8 = {
@@ -257,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D6B0F71DF184B700DB56E8 /* XCGLogglyDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +302,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -351,6 +357,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -384,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE027A6914839D109CB27BE5 /* Pods-XCGLoggly.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SMQREV95K4;
@@ -396,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PickupInfinity.XCGLoggly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -404,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A94EA974C17E60E09506C771 /* Pods-XCGLoggly.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SMQREV95K4;
@@ -423,6 +433,7 @@
 		F4D6B0F41DF1830F00DB56E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SMQREV95K4;
 				INFOPLIST_FILE = XCGLogglyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -435,6 +446,7 @@
 		F4D6B0F51DF1830F00DB56E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = SMQREV95K4;
 				INFOPLIST_FILE = XCGLogglyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -463,6 +475,7 @@
 				F4D6B0F21DF1830F00DB56E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4D6B0F31DF1830F00DB56E8 /* Build configuration list for PBXNativeTarget "XCGLogglyTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +484,7 @@
 				F4D6B0F51DF1830F00DB56E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
