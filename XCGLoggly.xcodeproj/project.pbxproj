@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5321EAA2B91B1DD954115BD7 /* Pods_XCGLoggly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3248349AF55323E9524156D /* Pods_XCGLoggly.framework */; };
 		F4D6B0E61DF1830F00DB56E8 /* XCGLoggly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6B0DC1DF1830F00DB56E8 /* XCGLoggly.framework */; };
 		F4D6B0EB1DF1830F00DB56E8 /* XCGLogglyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6B0EA1DF1830F00DB56E8 /* XCGLogglyTests.swift */; };
 		F4D6B0ED1DF1830F00DB56E8 /* XCGLoggly.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D6B0DF1DF1830F00DB56E8 /* XCGLoggly.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,12 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A94EA974C17E60E09506C771 /* Pods-XCGLoggly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCGLoggly.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCGLoggly/Pods-XCGLoggly.release.xcconfig"; sourceTree = "<group>"; };
+		F3248349AF55323E9524156D /* Pods_XCGLoggly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCGLoggly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6B0DC1DF1830F00DB56E8 /* XCGLoggly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLoggly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6B0DF1DF1830F00DB56E8 /* XCGLoggly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCGLoggly.h; sourceTree = "<group>"; };
 		F4D6B0E01DF1830F00DB56E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D6B0E51DF1830F00DB56E8 /* XCGLogglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCGLogglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6B0EA1DF1830F00DB56E8 /* XCGLogglyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLogglyTests.swift; sourceTree = "<group>"; };
 		F4D6B0EC1DF1830F00DB56E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE027A6914839D109CB27BE5 /* Pods-XCGLoggly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCGLoggly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCGLoggly/Pods-XCGLoggly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5321EAA2B91B1DD954115BD7 /* Pods_XCGLoggly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B194DC7C5F5C1D5FBEC79EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE027A6914839D109CB27BE5 /* Pods-XCGLoggly.debug.xcconfig */,
+				A94EA974C17E60E09506C771 /* Pods-XCGLoggly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E75118F8B03DDDFAE1B2944F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3248349AF55323E9524156D /* Pods_XCGLoggly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4D6B0D21DF1830F00DB56E8 = {
 			isa = PBXGroup;
 			children = (
 				F4D6B0DE1DF1830F00DB56E8 /* XCGLoggly */,
 				F4D6B0E91DF1830F00DB56E8 /* XCGLogglyTests */,
 				F4D6B0DD1DF1830F00DB56E8 /* Products */,
+				2B194DC7C5F5C1D5FBEC79EE /* Pods */,
+				E75118F8B03DDDFAE1B2944F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4D6B0F01DF1830F00DB56E8 /* Build configuration list for PBXNativeTarget "XCGLoggly" */;
 			buildPhases = (
+				8B0151F1D9C3B55ABBF7FD19 /* [CP] Check Pods Manifest.lock */,
 				F4D6B0D71DF1830F00DB56E8 /* Sources */,
 				F4D6B0D81DF1830F00DB56E8 /* Frameworks */,
 				F4D6B0D91DF1830F00DB56E8 /* Headers */,
 				F4D6B0DA1DF1830F00DB56E8 /* Resources */,
+				631650C4487D2A5CB2524830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +218,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631650C4487D2A5CB2524830 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCGLoggly/Pods-XCGLoggly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0151F1D9C3B55ABBF7FD19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4D6B0D71DF1830F00DB56E8 /* Sources */ = {
@@ -323,6 +382,7 @@
 		};
 		F4D6B0F11DF1830F00DB56E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE027A6914839D109CB27BE5 /* Pods-XCGLoggly.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -342,6 +402,7 @@
 		};
 		F4D6B0F21DF1830F00DB56E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A94EA974C17E60E09506C771 /* Pods-XCGLoggly.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
